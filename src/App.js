@@ -7,6 +7,7 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
+import Note from './components/Note/Note';
 import './App.css';
 
 const particlesOptions = 
@@ -130,6 +131,7 @@ class App extends Component {
             onButtonSubmit={this.onButtonSubmit}
             />
             <FaceRecognition box={box} imageUrl={imageUrl}/>
+            <Note />
           </div>
         : ( route === 'signin' || route === 'signout'
            ? <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
